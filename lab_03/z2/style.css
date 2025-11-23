@@ -1,0 +1,35 @@
+.timetable {
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    width: 850px;
+    margin: 30px auto;
+    font-size: 16px;
+    background: #fff;
+}
+caption {
+    caption-side: top;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.timetable th, .timetable td {
+    border: 1px solid #222;
+    padding: 8px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.timetable thead th {
+    background: #dae1f8;
+}
+.group-title {
+    background: #e7edd7;
+    font-size: 1.1em;
+}
+.vertical-cell {
+    background: #dae1f8;
+    font-weight: bold;
+    text-align: center;
+    writing-mode: vertical-lr;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}

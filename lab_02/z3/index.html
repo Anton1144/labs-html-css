@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жеруха Антон</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            font-weight: bold;
+        }
+        .todolist {
+            width: 400px;
+            margin: 25px auto;
+            background-color: #c2e0ef;
+            overflow: hidden;
+        }
+        .todolist li {
+            text-align: left;
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a7d2e0;
+    padding: 15px 25px;
+    border-bottom: 2px solid #fff;
+    font-size: 1.15em;
+        }
+        .todolist li.done {
+            background-color: #e4e4e4;
+            text-decoration: line-through;
+            color: #757575;
+        }
+        .todolist li input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .todolist li span.cross {
+            color: #ff1818;
+            font-size: 1.3em;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My To Do List</h1>
+    <ul class="todolist">
+        <li>
+            <input type="checkbox">
+            Hit the gym
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <input type="checkbox">
+            Pay bills
+            <span class="cross">×</span>
+        </li>
+        <li class="done">
+            <input type="checkbox" checked>
+            Meet John
+            <span class="cross">×</span>
+        </li>
+        <li class="done">
+            <input type="checkbox" checked>
+            Buy eggs
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <input type="checkbox">
+            Read a book
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <input type="checkbox">
+            Organize office
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <input type="checkbox">
+            Eat dinner
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <input type="checkbox">
+            Buy apples
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <input type="checkbox">
+            Meet Georg
+            <span class="cross">×</span>
+        </li>
+        <li class="done">
+            <input type="checkbox" checked>
+            Feed the cat
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <input type="checkbox">
+            Write a letter
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <input type="checkbox">
+            Run 1 km
+            <span class="cross">×</span>
+        </li>
+    </ul>
+</body>
+</html>

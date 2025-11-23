@@ -1,0 +1,22 @@
+.table {
+    width: 500px;
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-family: Arial, sans-serif;
+}
+
+.table td, .table th {
+    border: 1px solid #6395ff;
+    padding: 5px 10px;
+}
+
+.table thead {
+    background-color: #dae1f8;
+}
+
+.table tfoot {
+    background-color: #5776b1;
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+}

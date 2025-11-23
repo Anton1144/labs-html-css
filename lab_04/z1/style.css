@@ -1,0 +1,76 @@
+.product-card {
+    max-width: 240px;
+    background: #fafafa;
+    border: 2px solid #c2c2ea;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #ececec;
+    padding: 10px 15px 16px 15px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #eee;
+    display: block;
+    margin: 10px auto;
+}
+
+.card-info {
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.card-details {
+    font-size: 0.97em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.edit-btn {
+    background-color: #e1ecf7;
+    color: #1a7bd4;
+    border: 1px solid #b5cfed;
+    border-radius: 5px;
+    padding: 5px 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.edit-btn:hover {
+    background: #c7e9fd;
+}
+
+.delete-btn {
+    background-color: #ffe2e2;
+    color: #d41a2c;
+    border: 1px solid #edb5b5;
+    border-radius: 5px;
+    padding: 5px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+.delete-btn:hover {
+    background: #ffd0d0;
+    box-shadow: 0 0 3px #f47171;
+}
