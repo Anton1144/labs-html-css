@@ -1,0 +1,78 @@
+.projects {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.project {
+  position: relative;
+  width: 250px;
+  height: 220px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  background: #fff;
+  transition: box-shadow 0.5s;
+}
+
+.project img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  padding: 10px 16px 10px 16px;
+  transition: all 0.5s;
+  text-align: left;
+  min-height: 60px;
+  box-sizing: border-box;
+}
+
+.info .city {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.info .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.info p {
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.info p.hidden {
+  display: none;
+}
+
+.project:hover .info {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  bottom: 0;
+  min-height: 120px;
+  text-align: center;
+  border-bottom: 3px solid orange;
+}
+
+.project:hover .info .title {
+  background: orange;
+  color: #333;
+  padding: 2px 6px;
+  display: inline-block;
+}
+
+.project:hover .info p.hidden {
+  display: block;
+  margin-top: 6px;
+}

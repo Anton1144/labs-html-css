@@ -1,0 +1,42 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-image {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.center-image::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140px;
+  height: 140px;
+  border: 6px solid pink;
+  box-sizing: border-box;
+  background: transparent;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 1;
+}
+
+.center-image::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 160px;
+  height: 160px;
+  border: 2px solid rgba(255,192,203,0.5); 
+  box-sizing: border-box;
+  background: transparent;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 0;
+}
