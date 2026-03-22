@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жеруха Антон</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+    
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .nav-menu li { padding: 10px 20px; cursor: pointer; }
+        .nav-menu li:hover { background: #ddd; }
+
+        .burger-btn { display: none; cursor: pointer; border: none; background: #ddd; padding: 5px; }
+
+        @media (max-width: 400px) {
+            .nav-menu {
+                display: none; 
+                flex-direction: column;
+                position: absolute;
+                width: 150px;
+                background: white;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+            .nav-menu.active { display: flex; } 
+            .burger-btn { display: block; } 
+        }
+    </style>
+</head>
+<body>
+
+<button class="burger-btn" id="burgerBtn">
+    <img src="../menu-burger.svg" alt="Menu" width="30"> 
+</button>
+
+<ul class="nav-menu" id="navMenu">
+    <li>Home</li>
+    <li>Products</li>
+    <li>Contacts</li>
+    <li>About</li>
+</ul>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quae voluptatum, modi dolor corporis labore. Tenetur doloribus consectetur qui dolores aliquam ratione voluptas voluptates nesciunt sunt, quia ea, asperiores illum! Amet eius omnis sunt et, ea vero a repellendus voluptatum.</p>
+
+<script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    burgerBtn.addEventListener('click', (e) => {
+        navMenu.classList.toggle('active');
+        e.stopPropagation(); 
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && e.target !== burgerBtn) {
+            navMenu.classList.remove('active');
+        }
+    });
+</script>
+
+</body>
+</html>

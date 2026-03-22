@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Жеруха Антон</title>
+    <style>
+        .item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            position: relative;
+            border-radius: 8px;
+        }
+        .remove-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="item">
+    <h3>Header 1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore quasi voluptatem porro, veniam, ab illo omnis alias doloremque, maiores molestias iste blanditiis. Error aliquid, minus omnis obcaecati minima repudiandae.</p>
+</div>
+<div class="item">
+    <h3>Header 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, doloremque! Cumque, voluptates ratione. Autem libero voluptatem, maiores est, in aperiam natus fugit vitae quod ex assumenda eius soluta minima alias!</p>
+</div>
+<div class="item">
+    <h3>Header 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nihil culpa impedit numquam. Eaque commodi corporis numquam voluptatem accusantium sint a, aliquid quasi nihil enim natus? Distinctio quidem fugit nemo?</p>
+</div>
+
+<script>
+    const blocks = document.querySelectorAll('.item');
+
+    blocks.forEach(block => {
+        const btn = document.createElement('button');
+        btn.innerHTML = '&#10005;'; 
+        btn.className = 'remove-btn';
+
+        btn.onclick = function() {
+            block.remove(); 
+        };
+
+        block.appendChild(btn);
+    });
+</script>
+
+</body>
+</html>
