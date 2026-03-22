@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жеруха Антон</title>
+</head>
+<body>
+    <div class="box">Елемент 1</div>
+<div class="box">Елемент 2</div>
+<button id="toggleBtn">Показати / Приховати</button>
+
+<script>
+    const boxes = document.querySelectorAll('.box');
+    const toggleBtn = document.getElementById('toggleBtn');
+
+    toggleBtn.addEventListener('click', () => {
+        boxes.forEach(box => {
+            if (box.style.display === "none") {
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+</script>
+
+<style>
+    .box {
+        width: 100px;
+        height: 50px;
+        background: tomato;
+        margin-bottom: 5px;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+    }
+</style>
+</body>
+</html>

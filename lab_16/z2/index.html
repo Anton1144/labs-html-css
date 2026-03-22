@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жеруха Антон</title>
+</head>
+<body>
+    <div id="editableText">Початковий текст, який можна змінити.</div>
+<button id="editBtn">Змінити текст</button>
+
+<script>
+    const textDiv = document.getElementById('editableText');
+    const editBtn = document.getElementById('editBtn');
+
+    editBtn.onclick = function() {
+        const userInput = prompt("Введіть новий текст для блоку:", textDiv.textContent);
+        
+        if (userInput !== null) {
+            textDiv.textContent = userInput;
+        }
+    };
+</script>
+</body>
+</html>

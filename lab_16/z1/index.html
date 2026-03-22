@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жеруха Антон</title>
+</head>
+<body>
+    <div class="container" style="border: 1px solid #ccc; padding: 10px; min-height: 50px;">
+    <button id="addBtn">Додати блок</button>
+</div>
+
+<script>
+    const btn = document.getElementById('addBtn');
+    const container = document.querySelector('.container');
+
+    btn.addEventListener('click', () => {
+        const newDiv = document.createElement('div');
+        newDiv.textContent = "Я новий елемент!";
+
+        newDiv.style.backgroundColor = "lightblue";
+        newDiv.style.margin = "10px 0";
+        newDiv.style.padding = "5px";
+        newDiv.style.borderRadius = "8px";
+
+        container.appendChild(newDiv);
+    });
+</script>
+</body>
+</html>
